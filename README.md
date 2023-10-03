@@ -1,8 +1,10 @@
-# LOAM - poLygon extractiOn from rAster Map
+# LOAM
 
-LOAM: Exploiting Polygon Metadata to Understand Raster Maps - Accurate Polygonal Feature Extraction
+LOAM: Polygon Extraction from Raster Map
 
-
+> Exploiting Polygon Metadata to Understand Raster Maps - Accurate Polygonal Feature Extraction. <br>
+> Fandel Lin, Craig A. Knoblock, Basel Shbita, Binh Vu, Zekun Li, and Yao-Yi Chiang. <br>
+> SIGSPATIAL ’23
 
 
 
@@ -49,6 +51,16 @@ pip install -r requirements.txt
 
 
 ## Usage
+
+### Preprocessing of Metadata
+
+
+### Using Metadata to Learn to Recognize Polygons
+
+#### Train
+
+
+#### 
 
 Run .ipynb
 
