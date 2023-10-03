@@ -2,6 +2,8 @@
 
 LOAM: Polygon Extraction from Raster Map
 
+[[`Paper`](https://dl.acm.org/doi/10.1145/3589132.3625659)] [[`Video`](#)] [[`BibTeX`](#citation)]
+
 > Exploiting Polygon Metadata to Understand Raster Maps - Accurate Polygonal Feature Extraction. <br>
 > Fandel Lin, Craig A. Knoblock, Basel Shbita, Binh Vu, Zekun Li, and Yao-Yi Chiang. <br>
 > SIGSPATIAL ’23
@@ -15,7 +17,6 @@ Locating undiscovered deposits of critical minerals requires accurate geological
 
 
 ## Introduction
-
 
 We address the problem of extracting geological features represented as polygons from raster maps. The input includes (1) a raster map and (2) a raster image of the map key from the map legend in the raster map. The output is a binary image for each geological feature in the raster map. We use 1s to represent the extracted polygon feature in the binary image.
 
@@ -54,16 +55,31 @@ pip install -r requirements.txt
 
 ### Preprocessing of Metadata
 
+Setup `.csv` for the index to the training/ testing(extracting) raster maps
+
+Run `.ipynb` for generating intermediate bitmaps.
+
+Run `.ipynb` for post-processing intermediate bitmaps to support the polygon-recognition model.
+
 
 ### Using Metadata to Learn to Recognize Polygons
 
-#### Train
+#### Training and Extracting with Predefined Indexes to USGS Maps
+
+Setup `.csv` for the index to the training/ testing(extracting) raster maps
+
+Run `.ipynb` to train the polygon-recognition model and extract polygonal features from raster maps.
+
+* Note that the datasets are not included in the repo, please refer to the [USGS Maps](#dataset).
 
 
-#### 
+#### Extracting with a Pretrained Model
 
-Run .ipynb
+Run the following to exploit the polygon-recognition model for extracting polygonal features from raster maps.
 
+```
+python 
+```
 
 
 ## Dataset
@@ -80,13 +96,15 @@ Run .ipynb
 }
 ```
 
+From the competition datasets, we use the validation datasets to train the polygon-recognition model, and use the testing dataset to examine the performance. Please refer to [our paper](https://dl.acm.org/doi/10.1145/3589132.3625659) for details regarding the evaluation.
+
 [Competition Leaderboard (October 2022)](https://web.archive.org/web/20221202080740/https://criticalminerals.darpa.mil/Leaderboard)
 
 
 
 ## Citation
 
-Details to be determined
+Details for BibTeX to be determined.
 
 ```
 @InProceedings{,
