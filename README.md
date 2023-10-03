@@ -55,9 +55,9 @@ pip install -r requirements.txt
 
 ### Preprocessing of Metadata
 
-Setup `.csv` for the index to the training/ testing(extracting) raster maps
+Setup `targeted_map.csv` for the index to the training/ testing(extracting) raster maps
 
-Run `.ipynb` for generating intermediate bitmaps.
+Run `metedata_preprocessing.ipynb` for generating intermediate bitmaps.
 
 Run `.ipynb` for post-processing intermediate bitmaps to support the polygon-recognition model.
 
@@ -66,7 +66,7 @@ Run `.ipynb` for post-processing intermediate bitmaps to support the polygon-rec
 
 #### Training and Extracting with Predefined Indexes to USGS Maps
 
-Setup `.csv` for the index to the training/ testing(extracting) raster maps
+Setup `targeted_map_validation.csv` and `targeted_map_testing.csv` for the index to the training/ testing(extracting) raster maps, respectively.
 
 Run `.ipynb` to train the polygon-recognition model and extract polygonal features from raster maps.
 
