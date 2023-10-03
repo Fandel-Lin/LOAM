@@ -2,7 +2,7 @@
 
 LOAM: Exploiting Polygon Metadata to Understand Raster Maps - Accurate Polygonal Feature Extraction
 
-A two-stage approach that exploits the polygon metadata to extract geological features from raster maps.
+
 
 
 
@@ -15,7 +15,18 @@ Locating undiscovered deposits of critical minerals requires accurate geological
 ## Introduction
 
 
+We address the problem of extracting geological features represented as polygons from raster maps. The input includes (1) a raster map and (2) a raster image of the map key from the map legend in the raster map. The output is a binary image for each geological feature in the raster map. We use 1s to represent the extracted polygon feature in the binary image.
 
+<p align="center" width="100%">
+    <img width="90%" src="./Figure/loam_problem.png">
+</p>
+
+
+The presented LOAM is a two-stage approach that exploits the polygon metadata to extract geological features from raster maps. Our method generates multiple representations of the map for each map key. These representations capture different aspects of map understanding, such as extracting polygon features based on colors, textual descriptions, and boundaries. Our method then leverages these representations to adaptively extract polygon features from maps of diverse styles.
+
+<p align="center" width="100%">
+    <img width="90%" src="./Figure/loam_workflow.png">
+</p>
 
 
 ## Environment
