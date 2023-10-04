@@ -100,7 +100,7 @@ We use the USGS maps from the dataset provided in [DARPA Critical Mineral Assess
 
 From the competition datasets, we use the validation datasets to train the polygon-recognition model, and use the testing dataset to examine the performance. Please refer to [our paper](https://dl.acm.org/doi/10.1145/3589132.3625659) for details regarding the evaluation.
 
-[Competition Leaderboard (October 2022)](https://web.archive.org/web/20221202080740/https://criticalminerals.darpa.mil/Leaderboard)
+The evaluation is based on `\LOAM\evaluation_matrix_cma.py`. This script is provided by the competition authority and is used to evaluate the performance of solutions submitted to the competition as listed on [Competition Leaderboard (October 2022)](https://web.archive.org/web/20221202080740/https://criticalminerals.darpa.mil/Leaderboard).
 
 
 
