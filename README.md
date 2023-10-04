@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 ### Phase 1 - Preprocessing of Metadata
 
-Setup `targeted_map.csv` for the index to the training/ testing(extracting) raster maps
+Setup `targeted_map.csv` for the index to the raster maps.
 
 Run `metedata_preprocessing.ipynb` for generating intermediate bitmaps. The output for this section will default to an automatically created folder `\Solution_0517`.
 
@@ -77,7 +77,7 @@ Run `\LOAM\polygon_recognition_model.ipynb` to train the polygon-recognition mod
 
 We provide the link to our pre-trained model in `\LOAM\checkpoints\checkpoint_epoch14.pth_link.txt`, or access here to [Google Drive](https://drive.google.com/file/d/1eqbLoJ2XkWBe9mlZ4hpttc9rFpYUXrGK/view?usp=sharing).
 
-Run the following to exploit the polygon-recognition model for extracting polygonal features from raster maps.
+Run the following to exploit the pre-trained polygon-recognition model for extracting polygonal features from raster maps.
 
 ```
 python 
