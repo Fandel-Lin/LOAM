@@ -59,7 +59,7 @@ Setup `targeted_map.csv` for the index to the training/ testing(extracting) rast
 
 Run `metedata_preprocessing.ipynb` for generating intermediate bitmaps. The output for this section will default to an automatically created folder `\Solution_0517`.
 
-Run `postprocessing_for_bitmap.ipynb` for post-processing intermediate bitmaps to support the polygon-recognition model.
+Run `postprocessing_for_bitmap.ipynb` for post-processing intermediate bitmaps to support the polygon-recognition model. The output for this section will default to an empty folder `\LOAM\data`.
 
 
 ### Phase 2 - Using Metadata to Learn to Recognize Polygons
@@ -68,7 +68,7 @@ Run `postprocessing_for_bitmap.ipynb` for post-processing intermediate bitmaps t
 
 Setup `targeted_map_validation.csv` and `targeted_map_testing.csv` for the index to the training/ testing(extracting) raster maps, respectively.
 
-Run `.ipynb` to train the polygon-recognition model and extract polygonal features from raster maps.
+Run `\LOAM\polygon_recognition_model.ipynb` to train the polygon-recognition model and extract polygonal features from raster maps.
 
 * Note that the datasets are not included in the repo, please refer to the [USGS Maps](#dataset).
 
