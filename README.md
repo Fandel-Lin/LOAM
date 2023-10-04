@@ -73,7 +73,9 @@ Run `\LOAM\polygon_recognition_model.ipynb` to train the polygon-recognition mod
 * Note that the datasets are not included in the repo, please refer to the [USGS Maps](#dataset).
 
 
-#### Extracting with a Pretrained Model (work in progress)
+#### Extracting with a Pre-trained Model (work in progress)
+
+We provide the link to our pre-trained model in `\LOAM\checkpoints\checkpoint_epoch14.pth_link.txt`, or access here to [Google Drive](https://drive.google.com/file/d/1eqbLoJ2XkWBe9mlZ4hpttc9rFpYUXrGK/view?usp=sharing).
 
 Run the following to exploit the polygon-recognition model for extracting polygonal features from raster maps.
 
