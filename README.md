@@ -6,7 +6,7 @@ LOAM: Polygon Extraction from Raster Map
 
 > Exploiting Polygon Metadata to Understand Raster Maps - Accurate Polygonal Feature Extraction. <br>
 > Fandel Lin, Craig A. Knoblock, Basel Shbita, Binh Vu, Zekun Li, and Yao-Yi Chiang. <br>
-> SIGSPATIAL ’23
+> ACM SIGSPATIAL ’23
 
 
 
@@ -73,7 +73,7 @@ Run `\LOAM\polygon_recognition_model.ipynb` to train the polygon-recognition mod
 * Note that the datasets are not included in the repo, please refer to the [USGS Maps](#dataset).
 
 
-#### Extracting with a Pretrained Model
+#### Extracting with a Pretrained Model (work in progress)
 
 Run the following to exploit the polygon-recognition model for extracting polygonal features from raster maps.
 
@@ -84,7 +84,7 @@ python
 
 ## Dataset
 
-[DARPA Critical Mineral Assessment Competition - Map Feature Extraction Challenge](https://criticalminerals.darpa.mil/The-Competition)
+We use the USGS maps from the dataset provided in [DARPA Critical Mineral Assessment Competition - Map Feature Extraction Challenge](https://criticalminerals.darpa.mil/The-Competition).
 
 ```
 @dataset{cma2023data,
