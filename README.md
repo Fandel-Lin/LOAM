@@ -59,7 +59,7 @@ Setup `targeted_map.csv` for the index to the training/ testing(extracting) rast
 
 Run `metedata_preprocessing.ipynb` for generating intermediate bitmaps.
 
-Run `.ipynb` for post-processing intermediate bitmaps to support the polygon-recognition model.
+Run `postprocessing_for_bitmap.ipynb` for post-processing intermediate bitmaps to support the polygon-recognition model.
 
 
 ### Phase 2 - Using Metadata to Learn to Recognize Polygons
