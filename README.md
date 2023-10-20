@@ -2,7 +2,7 @@
 
 LOAM: Polygon Extraction from Raster Map
 
-[[`Paper`](https://dl.acm.org/doi/10.1145/3589132.3625659)] [[`Video`](#)] [[`BibTeX`](#citation)]
+[[`Paper`](https://dl.acm.org/doi/10.1145/3589132.3625659)] [[`Poster`](https://drive.google.com/file/d/151tJpbxj6F9AVemUUKGufBl0VlPavdCG/view?usp=share_link)] [[`Video`](#)] [[`BibTeX`](#citation)]
 
 > Exploiting Polygon Metadata to Understand Raster Maps - Accurate Polygonal Feature Extraction. <br>
 > Fandel Lin, Craig A. Knoblock, Basel Shbita, Binh Vu, Zekun Li, and Yao-Yi Chiang. <br>
