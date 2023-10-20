@@ -25,7 +25,7 @@ We address the problem of extracting geological features represented as polygons
 </p>
 
 
-The presented LOAM is a two-stage approach that exploits the <i><b>polygon metadata</b></i> to extract geological features that are represented as polygons from raster maps. <i><b>Polygon metadata</b></i> is any data that is on the map, describing or about the polygon feature, but cannot be the polygon ('a set of line segments') itself.
+The presented LOAM is a two-stage approach that exploits the <i><b>polygon metadata</b></i> to extract polygonal features (geological features that are represented as polygons) from raster maps. <i><b>Polygon metadata</b></i> is any data that is on the map, describing or about the polygon feature, but cannot be the polygon ('a set of line segments') itself.
 
 <p align="center" width="100%">
     <img width="90%" src="./Figure/loam_overview.png">
