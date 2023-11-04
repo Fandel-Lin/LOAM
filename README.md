@@ -88,14 +88,24 @@ We provide the link to our pre-trained model used for one-click procedure in `\L
 Go to directory `One_Click`, and run the following to exploit the pre-trained polygon-recognition model for extracting polygonal features from raster maps.
 
 ```
-python loam_handler.py --data_dir --data_groundtruth_dir --solutiona_dir --targeted_map_list
+python loam_handler.py --data_dir --data_groundtruth_dir --solutiona_dir --targeted_map_list targeted_map.csv
+```
+
+or with some custom settings:
+
+```
+python loam_handler.py --data_dir --data_groundtruth_dir --solutiona_dir --targeted_map_list targeted_map.csv --map_preprocessing TRUE --generate_boundary_extraction TRUE --printing_auxiliary_information TRUE --preprocessing_recoloring TRUE
 ```
 
 ```
---data_dir: path to the source map tif.
---data_groundtruth_dir: path to the groundtruth of map key tif. (this is to support evaluation)
---solutiona_dir: path to the generated intermediate bitmaps.
---targeted_map_list: a csv file that lists the map name.
+--data_dir: (str) path to the source map tif.
+--data_groundtruth_dir: (str) path to the groundtruth of map key tif. (this is to support evaluation)
+--solutiona_dir: (str) path to the generated intermediate bitmaps.
+--targeted_map_list: (str) a csv file that lists the map name.
+--map_preprocessing: (bool) whether perform map cropping under metadata preprocessing. (default to True)
+--generate_boundary_extraction: (bool) whether perform boundary extraction under metadata preprocessing. (default to True)
+--printing_auxiliary_information: (bool) whether perform auxiliary-info extraction under metadata preprocessing. (default to True)
+--preprocessing_recoloring: (bool) whether perform color-set matching under metadata preprocessing. (default to True)
 ```
 
 
