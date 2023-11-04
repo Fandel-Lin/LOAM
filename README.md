@@ -81,12 +81,21 @@ Run `\LOAM\polygon_recognition_model.ipynb` to train the polygon-recognition mod
 
 #### Extracting with a Pre-trained Model (work in progress)
 
-We provide the link to our pre-trained model in `\LOAM\checkpoints\checkpoint_epoch14.pth_link.txt`, or access here to [Google Drive](https://drive.google.com/file/d/1eqbLoJ2XkWBe9mlZ4hpttc9rFpYUXrGK/view?usp=sharing).
+We provide the link to our pre-trained model used in the paper in `\LOAM\checkpoints\checkpoint_epoch14.pth_link.txt`, or access here to [Google Drive](https://drive.google.com/file/d/1eqbLoJ2XkWBe9mlZ4hpttc9rFpYUXrGK/view?usp=sharing).
 
-Run the following to exploit the pre-trained polygon-recognition model for extracting polygonal features from raster maps.
+We provide the link to our pre-trained model used for one-click procedure in `\LOAM\checkpoints\checkpoint_epoch2.pth_link.txt`, or access here to [Google Drive](https://drive.google.com/file/d/16N-2NbtqLSNCU83J5Iyw4Ca8A2f7aIqi/view?usp=sharing).
+
+Go to directory `One_Click`, and run the following to exploit the pre-trained polygon-recognition model for extracting polygonal features from raster maps.
 
 ```
-python 
+python loam_handler.py --data_dir --data_groundtruth_dir --solutiona_dir --targeted_map_list
+```
+
+```
+--data_dir: path to the source map tif.
+--data_groundtruth_dir: path to the groundtruth of map key tif. (this is to support evaluation)
+--solutiona_dir: path to the generated intermediate bitmaps.
+--targeted_map_list: a csv file that lists the map name.
 ```
 
 
