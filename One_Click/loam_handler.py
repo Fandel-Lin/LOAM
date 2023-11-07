@@ -34,6 +34,7 @@ def main():
     generate_boundary_extraction = str_to_bool(args.generate_boundary_extraction)
     printing_auxiliary_information = str_to_bool(args.printing_auxiliary_information)
     preprocessing_recoloring = str_to_bool(args.preprocessing_recoloring)
+    model_inference = str_to_bool(args.model_inference)
 
     metadata_preprocessing.metadata_preprocessing(
         input_data_dir = data_dir,
@@ -53,29 +54,32 @@ def main():
         crop_size = 256
     )
 
-    if cwd_flag == False:
-        cwd_flag = True
+    if model_inference == True:
+        '''
+        if cwd_flag == False:
+            cwd_flag = True
 
-        original_cwd = os.getcwd()
-        print(os.getcwd())
+            original_cwd = os.getcwd()
+            print(os.getcwd())
 
-        os.chdir(original_cwd + '\LOAM')
-        print(os.getcwd())
-        
-    import loam_inference
+            os.chdir(original_cwd + '\LOAM')
+            print(os.getcwd())
+        '''
+            
+        import loam_inference
 
-    loam_inference.loam_inference(
-        input_filtering_new_dataset = True,
-        input_filtering_threshold = 0.33,
-        input_k_fold_testing = 1,
-        input_crop_size = 256,
-        input_separate_validating_set = False,
-        input_reading_predefined_testing = True,
-        input_training_needed = False,
-        input_targeted_map_file = 'targeted_map.csv',
-        input_map_source_dir = data_dir,
-        input_groundtruth_dir = data_groundtruth_dir
-    )
+        loam_inference.loam_inference(
+            input_filtering_new_dataset = True,
+            input_filtering_threshold = 0.33,
+            input_k_fold_testing = 1,
+            input_crop_size = 256,
+            input_separate_validating_set = False,
+            input_reading_predefined_testing = True,
+            input_training_needed = False,
+            input_targeted_map_file = 'targeted_map.csv',
+            input_map_source_dir = data_dir,
+            input_groundtruth_dir = data_groundtruth_dir
+        )
 
 
 
@@ -91,6 +95,7 @@ if __name__ == '__main__':
     parser.add_argument('--generate_boundary_extraction', type=str, default='True')
     parser.add_argument('--printing_auxiliary_information', type=str, default='True')
     parser.add_argument('--preprocessing_recoloring', type=str, default='True')
+    parser.add_argument('--model_inference', type=str, default='False')
 
     args = parser.parse_args()
     
