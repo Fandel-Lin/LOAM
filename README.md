@@ -97,6 +97,8 @@ or with some custom settings:
 
 ```
 python loam_handler.py --data_dir --data_groundtruth_dir --solutiona_dir --targeted_map_list targeted_map.csv --map_preprocessing TRUE --generate_boundary_extraction TRUE --printing_auxiliary_information TRUE --preprocessing_recoloring TRUE
+cd LOAM
+python loam_handler.py --data_dir --data_groundtruth_dir --model_inference TRUE
 ```
 
 ```
@@ -108,6 +110,7 @@ python loam_handler.py --data_dir --data_groundtruth_dir --solutiona_dir --targe
 --generate_boundary_extraction: (bool) whether perform boundary extraction under metadata preprocessing. (default to True)
 --printing_auxiliary_information: (bool) whether perform auxiliary-info extraction under metadata preprocessing. (default to True)
 --preprocessing_recoloring: (bool) whether perform color-set matching under metadata preprocessing. (default to True)
+--model_inference: (bool) to perform either metadata preprocessing (False) or polygon-recognition model (True). (default to False)
 ```
 
 
