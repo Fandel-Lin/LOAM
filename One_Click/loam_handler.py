@@ -36,25 +36,25 @@ def main():
     preprocessing_recoloring = str_to_bool(args.preprocessing_recoloring)
     model_inference = str_to_bool(args.model_inference)
 
-    metadata_preprocessing.metadata_preprocessing(
-        input_data_dir = data_dir,
-        input_data_boundary_dir = data_groundtruth_dir,
-        input_solutiona_dir = solutiona_dir,
-        input_targeted_map_list = targeted_map_list,
-        input_map_preprocessing = map_preprocessing,
-        input_generate_boundary_extraction = generate_boundary_extraction,
-        input_printing_auxiliary_information = printing_auxiliary_information,
-        input_preprocessing_recoloring = preprocessing_recoloring
-    )
+    if model_inference == False:
+        metadata_preprocessing.metadata_preprocessing(
+            input_data_dir = data_dir,
+            input_data_boundary_dir = data_groundtruth_dir,
+            input_solutiona_dir = solutiona_dir,
+            input_targeted_map_list = targeted_map_list,
+            input_map_preprocessing = map_preprocessing,
+            input_generate_boundary_extraction = generate_boundary_extraction,
+            input_printing_auxiliary_information = printing_auxiliary_information,
+            input_preprocessing_recoloring = preprocessing_recoloring
+        )
 
-    metadata_postprocessing.metadata_postprocessing(
-        input_data_dir = data_dir,
-        input_solution_dir = 'Solution_' + args.solutiona_dir,
-        input_data_dir_groundtruth = data_groundtruth_dir,
-        crop_size = 256
-    )
-
-    if model_inference == True:
+        metadata_postprocessing.metadata_postprocessing(
+            input_data_dir = data_dir,
+            input_solution_dir = 'Solution_' + args.solutiona_dir,
+            input_data_dir_groundtruth = data_groundtruth_dir,
+            crop_size = 256
+        )
+    else:
         '''
         if cwd_flag == False:
             cwd_flag = True
